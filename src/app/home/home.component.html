@@ -1,0 +1,20 @@
+<div style="text-align:center">
+    <h1>
+      Welcome!
+    </h1>
+  </div>
+  
+  <br>
+  <br>
+  
+  
+  <div >
+    <ul  >
+      <li *ngFor="let datas of data"><br> {{datas.name}}   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        <button class="button"
+        (click) = "gotoTest(datas)">Start Test</button>
+      
+    </li>
+  </ul>
+
+   </div>

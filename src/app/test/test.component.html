@@ -1,0 +1,42 @@
+<div class="container p 5">
+    <div class="row">
+        <div class="col-sm-8 offset-2">
+            <h3 class="text-center">Question Number:{{i+1}} of {{testdata.length}}</h3>
+
+            <div>
+            <h1>{{ testdata[i].questionText }}</h1>
+
+                
+            <ul style="list-style: none;" class="list-group" *ngFor="let ans of testdata[i].options; let i=index" >
+                <label>
+                    <li class="list-group-item" >
+                        <input  type="checkbox" name="options"  (click)="getStatus(i)">
+                             {{ ans }}
+                     </li>
+                </label>
+            </ul>
+        </div>
+
+        
+        </div>
+            &nbsp;
+           <div *ngIf='i!=testdata.length-1'>
+               <button type="button"
+               class="btn" (click)="onnext()">Next</button>
+</div>
+
+
+
+           <div *ngIf='i==testdata.length-1'>
+            <button type="button" class="btn btn-success" >
+                <a class="text-white text-decoration-none" routerLink="/score" 
+              (click)="sendData()">Submit Test</a>
+            </button>
+      </div>
+
+        </div>
+
+        <router-outlet></router-outlet>
+    </div>
+
+

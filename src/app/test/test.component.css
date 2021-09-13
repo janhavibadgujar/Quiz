@@ -1,0 +1,35 @@
+.btn{
+      padding: 15px 45 px;
+      background-color:dodgerblue;
+      color:floralwhite;
+      border:none;
+      border-radius:5px;
+      cursor: pointer;
+      display: inline-block;
+  }
+
+.result-box{
+    text-align:center;
+}
+
+.result-box h1{
+    font-size:36px;
+    line-height:42px;
+    color:darkviolet
+}
+
+.result-box table{
+    width:100%;
+    border-collapse:collapse;
+    margin:30px 0;
+}
+
+.result-box table td{
+    border: 1px solid #cccccc;
+    padding: 8px 15px;
+    font-weight:500;
+    color:#0000;
+    width:50%;
+    text-align:left;
+    font-size:18px;
+}
